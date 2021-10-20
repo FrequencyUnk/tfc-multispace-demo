@@ -8,8 +8,6 @@ terraform {
 }
 
 resource "multispace_run" "root" {
-  # Use string workspace names here and not data sources so that
-  # you can define the multispace runs before the workspace even exists.
   organization = "bluebelt-dev"
   workspace    = "multispace-home"
 }
